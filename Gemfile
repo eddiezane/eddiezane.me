@@ -12,6 +12,7 @@ end
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'guard-livereload'
 end
 
 group :production do
