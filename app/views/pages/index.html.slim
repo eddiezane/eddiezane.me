@@ -6,5 +6,9 @@ header
 .row.text-center
   .small-6.columns 
     h4 Things that I made 
+    .row
+      .small-12.columns
+        - @projects.each do |project| 
+          = project.name
   .small-6.columns 
     h4 Things that I like

@@ -5,3 +5,4 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Project.create(name: "Burrito Finder", url: "http://burrito-finder.eddiezane.me", repo: "https://github.com/eddiezane/Burrito-Decider", info: "Find the closest burrito selling establishment!")
