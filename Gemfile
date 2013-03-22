@@ -15,6 +15,9 @@ end
 group :development, :test do
   gem 'sqlite3'
   gem 'guard-livereload'
+  gem 'guard-rspec'
+  gem 'rspec-rails'
+  gem 'capybara'
 end
 
 group :production do
