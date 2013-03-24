@@ -4,11 +4,33 @@ header
       h1.text-center eddiezane 
       hr
 .row.text-center
-  .small-6.columns 
-    h4 Things that I made 
+  .large-8.columns 
+    h4 Things that I have made 
     .row
       .small-12.columns
-        - @projects.each do |project| 
-          = project.name
-  .small-6.columns 
+        ul.large-block-grid-2
+          - @projects.each do |project|
+            li
+              .project
+                .project-img
+                  img[src=project.image]
+                .project-info
+                  a[href=project.url]
+                    h3 = project.name
+                    h5.subheader = project.info
+                  br
+                  a[href=project.repo]:h5.subheader Github
+  .large-4.columns 
     h4 Things that I like
+javascript:
+  $(document).ready(function() {
+    $(".project-info").hide();
+    $(".project").mouseover(function() {
+      $(this).children(".project-img").hide();
+      $(this).children(".project-info").show();
+    });
+    $(".project").mouseleave(function() {
+      $(this).children(".project-img").show();
+      $(this).children(".project-info").hide();
+    });
+  });

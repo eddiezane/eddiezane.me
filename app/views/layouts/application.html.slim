@@ -14,11 +14,9 @@ head
   title= content_for?(:title) ? yield(:title) : "Eddie Zaneski"
 
   = stylesheet_link_tag "application"
-  = javascript_include_tag "vendor/custom.modernizr"
+  = javascript_include_tag "vendor/custom.modernizr", "application"
   = csrf_meta_tag
 
 body
 
   == yield
-
-  = javascript_include_tag "application"
