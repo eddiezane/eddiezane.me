@@ -13,10 +13,11 @@ head
 
   title= content_for?(:title) ? yield(:title) : "Eddie Zaneski"
 
-  = stylesheet_link_tag "application"
+  link href='http://fonts.googleapis.com/css?family=Give+You+Glory' rel='stylesheet' type='text/css'
   = javascript_include_tag "vendor/custom.modernizr", "application"
   = csrf_meta_tag
 
 body
 
   == yield
+  = stylesheet_link_tag "application"

@@ -22,15 +22,3 @@ header
                   a[href=project.repo]:h5.subheader Github
   .large-4.columns 
     h4 Things that I like
-javascript:
-  $(document).ready(function() {
-    $(".project-info").hide();
-    $(".project").mouseover(function() {
-      $(this).children(".project-img").hide();
-      $(this).children(".project-info").show();
-    });
-    $(".project").mouseleave(function() {
-      $(this).children(".project-img").show();
-      $(this).children(".project-info").hide();
-    });
-  });
