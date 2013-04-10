@@ -12,6 +12,7 @@
 //
 //=require jquery
 //=require pages
+//=require ga
 // require jquery_ujs
 // require foundation
 // require_tree .
