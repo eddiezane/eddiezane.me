@@ -1,8 +1,12 @@
 class ProjectsController < ApplicationController
+  http_basic_authenticate_with name: "admin", password: ENV["ADMIN_PASSWORD"] 
+
   def index
+    @projects = Project.all
   end
 
   def show
+    @project = Project.find(params[:id])
   end
 
   def new
